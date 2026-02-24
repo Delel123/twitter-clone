@@ -1,0 +1,186 @@
+/* Only what Bootstrap doesn’t cover well */
+
+/* fixed left rail width */
+.left-rail{
+  width: 88px;
+  flex: 0 0 88px;
+}
+
+/* independent scroll columns (same as your original) */
+.inbox-scroll{
+  height: 100vh;
+  overflow-y: auto;
+}
+.convo-scroll{
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* rail icons */
+.rail-icon{
+  width:52px;
+  height:52px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  color:#fff;
+  text-decoration:none;
+  position:relative;
+}
+.rail-icon:hover{ background:#0f0f0f; }
+.rail-icon i{ font-size:20px; }
+.rail-icon.active{ font-weight:800; }
+
+.badge-x{
+  position:absolute;
+  right:14px;
+  top:12px;
+  background:#1d9bf0;
+  color:#fff;
+  font-size:11px;
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #000;
+}
+
+.post-rail{
+  margin-top:6px;
+  width:52px;
+  height:52px;
+  border:none;
+  border-radius:999px;
+  background:#fff;
+  color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.post-rail:hover{ filter:brightness(.92); }
+
+.mini-avatar{
+  width:34px;
+  height:34px;
+  border-radius:999px;
+  background: radial-gradient(circle at 30% 30%, #4cc9f0, #7209b7);
+  border:1px solid #2f3336;
+}
+
+/* search pill */
+.search-pill{
+  border:1px solid #2f3336;
+  background:#0b0b0b;
+  border-radius:999px;
+  padding:10px 12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.search-input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:transparent;
+  color:#fff;
+}
+
+/* chips */
+.chip{
+  border:1px solid #2f3336;
+  background:transparent;
+  color:#71767b;
+  padding:7px 14px;
+  border-radius:999px;
+  font-weight:600;
+}
+.chip:hover{ background:#0f0f0f; color:#fff; }
+.chip.active{
+  background:#fff;
+  color:#000;
+  border-color:#fff;
+}
+
+/* chat rows */
+.chat-row{
+  display:flex;
+  gap:12px;
+  padding:14px 16px;
+  text-decoration:none;
+  color:#fff;
+  border-top:1px solid rgba(255,255,255,0.02);
+}
+.chat-row:hover{ background:#0f0f0f; }
+.chat-row.active{ background:rgba(255,255,255,0.03); }
+
+.avatar{
+  width:44px;
+  height:44px;
+  border-radius:999px;
+  flex:0 0 44px;
+  border:1px solid #2f3336;
+  background:#111;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:800;
+}
+.avatar.img{
+  background:
+    linear-gradient(140deg, #ff006e, #8338ec),
+    radial-gradient(circle at 30% 30%, #fff, transparent 55%);
+}
+.avatar.img2{
+  background:
+    linear-gradient(140deg, #00bbf9, #f15bb5),
+    radial-gradient(circle at 30% 30%, #fff, transparent 55%);
+}
+
+/* header icon buttons */
+.icon-pill{
+  width:36px;
+  height:36px;
+  border:none;
+  border-radius:999px;
+  background:transparent;
+  color:#fff;
+}
+.icon-pill:hover{ background:#0f0f0f; }
+
+/* conversation center */
+.big-mail{
+  width:92px;
+  height:92px;
+  border-radius:999px;
+  background:#121212;
+  border:1px solid #2f3336;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.big-mail i{ font-size:36px; }
+
+/* floating button */
+.floating-btn{
+  position:absolute;
+  right:22px;
+  bottom:22px;
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  border:1px solid #2f3336;
+  background:#0a0a0a;
+  color:#fff;
+}
+.floating-btn:hover{ background:#101010; }
+
+/* OPTIONAL tiny tweak (only if you want rail smaller on very small screens)
+   Bootstrap doesn't do "88px -> 64px" automatically */
+@media (max-width: 520px){
+  .left-rail{ width:64px; flex:0 0 64px; }
+  .rail-icon{ width:46px; height:46px; }
+  .post-rail{ width:46px; height:46px; }
+}

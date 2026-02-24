@@ -1,0 +1,156 @@
+/* ONE scrollbar for middle + right */
+.scroll-wrap{
+  height: 100vh;
+  overflow-y: auto;
+}
+
+/* LEFT SIDEBAR: force real Twitter-like width (prevents icons-only collapse) */
+.leftbar{
+  width: 290px;        /* key fix */
+  flex: 0 0 290px;     /* key fix */
+  background: #000;
+}
+
+/* Left links look like X */
+.left-link{
+  display:flex;
+  align-items:center;
+  gap:16px;
+  padding:12px 14px;
+  border-radius:999px;
+  text-decoration:none;
+  color:#fff;
+  font-size:20px;
+}
+.left-link i{
+  width:28px;
+  display:flex;
+  justify-content:center;
+  font-size:22px;
+}
+.left-link span{
+  font-size:22px;
+}
+.left-link:hover{ background:#0f0f0f; }
+.left-link.active span{ font-weight:800; }
+
+/* X logo pill */
+.left-logo{
+  width:52px;
+  height:52px;
+  border-radius:999px;
+  color:#fff;
+  text-decoration:none;
+  font-size:26px;
+}
+.left-logo:hover{ background:#0f0f0f; }
+
+/* Notifications badge */
+.left-badge{
+  position:absolute;
+  left: 34px;
+  top: 10px;
+  width:18px;
+  height:18px;
+  border-radius:999px;
+  background:#1d9bf0;
+  color:#fff;
+  font-size:11px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #000;
+}
+
+/* Account row */
+.left-account:hover{ background:#0f0f0f; }
+.left-avatar{
+  width:42px;height:42px;border-radius:999px;
+  background: radial-gradient(circle at 30% 30%, #4cc9f0, #7209b7);
+  border:1px solid #2f3336;
+}
+
+/* Topbar blur */
+.topbar{
+  background: rgba(0,0,0,.85);
+  backdrop-filter: blur(6px);
+}
+
+/* Small icon pills */
+.icon-pill{
+  width:38px;height:38px;
+  border:none;border-radius:999px;
+  background:transparent;color:#fff;
+  display:inline-flex;align-items:center;justify-content:center;
+}
+.icon-pill:hover{ background:#0f0f0f; }
+
+/* Hover pills for actions */
+.hover-pill:hover{ background:#0f0f0f; }
+
+/* Banner + avatar overlap */
+.banner{ height:190px; background:#3a3a3a; }
+.avatar-overlap{ position:absolute; top:-52px; left:16px; }
+.avatar{
+  width:118px;height:118px;border-radius:999px;
+  border:4px solid #000;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255,255,255,.2), transparent 55%),
+    linear-gradient(140deg, #00bbf9, #f15bb5);
+}
+
+/* Right search pill */
+.search-pill{
+  border:1px solid #2f3336;
+  background:#0b0b0b;
+  border-radius:999px;
+  padding:10px 12px;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+.search-input{
+  width:100%;
+  border:none;
+  outline:none;
+  background:transparent;
+  color:#fff;
+}
+
+/* Card */
+.cardx{
+  border:1px solid #2f3336;
+  background:#0b0b0b;
+  border-radius:16px;
+  padding:14px;
+}
+
+/* Mini pics */
+.mini-pic{ width:40px;height:40px;border-radius:999px;border:1px solid #2f3336; }
+.mini-pic.a1{ background:linear-gradient(140deg,#00bbf9,#f15bb5); }
+
+/* Post avatar + media placeholder */
+.post-avatar{
+  width:44px;height:44px;border-radius:999px;
+  border:1px solid #2f3336;
+  background: linear-gradient(140deg, #00bbf9, #f15bb5);
+  flex:0 0 44px;
+}
+
+/* Floating buttons */
+.float-stack{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+.float-btn{
+  width:56px;height:56px;
+  border-radius:16px;
+  border:1px solid #2f3336;
+  background:#0a0a0a;
+  color:#fff;
+}
+.float-btn:hover{ background:#101010; }

@@ -1,0 +1,63 @@
+/* keep the X vibe without rewriting Bootstrap */
+
+.x-hero-logo{
+  width: min(420px, 70vw);
+  height: auto;
+}
+
+/* OR divider like X */
+.or-divider{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:12px;
+  width:100%;
+  max-width: 320px;
+  margin: 2px 0;
+}
+.or-divider::before,
+.or-divider::after{
+  content:"";
+  flex:1;
+  height:1px;
+  background: rgba(255,255,255,0.35);
+}
+.or-divider span{
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* footer links */
+.footer-link{
+  color: rgb(113,118,123);
+  text-decoration:none;
+}
+.footer-link:hover{
+  text-decoration:underline;
+}
+
+.create{
+  width:100%;
+  max-width:320px;
+  height:42px;
+  border-radius:999px;
+  background:#fff;
+  color:#0f1419;
+  font-weight:700;
+}
+.create:hover{ filter:brightness(.95); }
+
+.uf{
+  width:100%;
+  max-width:320px;
+  height:42px;
+  border-radius:999px;
+  border:1px solid #cfd9de;
+  background:transparent;
+  color:#fff;
+  font-weight:700;
+}
+.uf:hover{ background: rgba(255,255,255,0.08); }
+
+

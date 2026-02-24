@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>X Home</title>
+
+  <!-- Bootstrap -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <link rel="stylesheet" href="home.css" />
+</head>
+
+<body class="bg-black text-white">
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+
+    <!-- LEFT SIDEBAR -->
+    <aside class="col-12 col-md-3 col-lg-3 col-xl-2 d-none d-md-block border-end border-dark">
+      <div class="vh-100 position-sticky top-0 d-flex flex-column py-2">
+
+        <a href="#" class="logo-pill mb-2">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <nav class="nav flex-column gap-1">
+
+          <!-- <a class="nav-link-x active" href="#">
+            <i class="fa-solid fa-house"></i>
+            <span>Home</span>
+          </a> -->
+
+          <a class="x-nav__item active" href="home.html">
+           <span class="x-nav__icon"><i class="fa-solid fa-house"></i></span>
+          <span class="x-nav__text">Home</span>
+          </a>
+
+          <a class="x-nav__item" href="explore.html">
+            <span class="x-nav__icon"><i class="fa-solid fa-magnifying-glass"></i></span>
+            <span class="x-nav__text">Explore</span>
+          </a>
+
+
+          <!-- <a class="nav-link-x" href="#">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <span>Explore</span>
+          </a> -->
+
+          <a class="nav-link-x position-relative" href="#">
+            <i class="fa-regular fa-bell"></i>
+            <span>Notifications</span>
+            <span class="badge-x">1</span>
+          </a>
+
+          <!-- <a class="nav-link-x" href="#">
+            <i class="fa-regular fa-envelope"></i>
+            <span>Chat</span>
+          </a> -->
+
+          <a class="x-nav__item" href="messages.html">
+           <span class="x-nav__icon"><i class="fa-regular fa-envelope"></i></span>
+          <span class="x-nav__text">Chat</span>
+          </a>
+
+          <a class="nav-link-x" href="#">
+            <i class="fa-solid fa-wand-magic-sparkles"></i>
+            <span>Grok</span>
+          </a>
+
+          <a class="nav-link-x" href="#">
+            <i class="fa-regular fa-bookmark"></i>
+            <span>Bookmarks</span>
+          </a>
+
+          <a class="nav-link-x" href="#">
+            <i class="fa-solid fa-user-pen"></i>
+            <span>Creator Studio</span>
+          </a>
+
+          <a class="nav-link-x" href="#">
+            <i class="fa-solid fa-x"></i>
+            <span>Premium</span>
+            <span class="ms-2 badge rounded-pill text-bg-primary small">50% off</span>
+          </a>
+
+          <!-- <a class="nav-link-x" href="#">
+            <i class="fa-regular fa-user"></i>
+            <span>Profile</span>
+          </a> -->
+
+          
+        <a class="x-nav__item" href="profile.html">
+          <span class="x-nav__icon"><i class="fa-regular fa-user"></i></span>
+          <span class="x-nav__text">Profile</span>
+        </a>
+
+
+          <a class="nav-link-x" href="#">
+            <i class="fa-solid fa-ellipsis"></i>
+            <span>More</span>
+          </a>
+        </nav>
+
+        <button class="btn btn-light fw-bold rounded-pill w-100 mt-3">
+          Post
+        </button>
+
+        <!-- User -->
+        <div class="d-flex align-items-center gap-2 mt-auto p-2 rounded-pill hover-dark">
+          <div class="avatar-sm">S</div>
+          <div class="flex-grow-1">
+            <div class="fw-bold small">spida123</div>
+            <div class="text-secondary small">@lol12345120</div>
+          </div>
+          <i class="fa-solid fa-ellipsis text-secondary"></i>
+        </div>
+
+      </div>
+    </aside>
+
+    <!-- MIDDLE FEED -->
+    <main class="col-12 col-md-6 col-lg-6 col-xl-5 border-end border-dark">
+
+      <!-- Tabs -->
+      <div class="sticky-top bg-black border-bottom border-dark d-flex">
+        <button class="tab-x active">For you</button>
+        <button class="tab-x">Following</button>
+      </div>
+
+      <!-- Composer -->
+      <div class="p-3 border-bottom border-dark">
+        <div class="d-flex gap-3">
+          <div class="avatar-md">S</div>
+          <input class="form-control bg-black border-0 text-white fs-5"
+                 placeholder="What’s happening?">
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center mt-3">
+          <div class="d-flex gap-2 text-primary">
+            <i class="fa-regular fa-image"></i>
+            <i class="fa-solid fa-film"></i>
+            <i class="fa-solid fa-bars-staggered"></i>
+            <i class="fa-regular fa-face-smile"></i>
+            <i class="fa-regular fa-calendar"></i>
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <button class="btn btn-light rounded-pill fw-bold px-4">
+            Post
+          </button>
+        </div>
+      </div>
+
+      <div class="text-center text-primary py-2 border-bottom border-dark">
+        Show 35 posts
+      </div>
+
+      <!-- Tweet -->
+      <div class="p-3 border-bottom border-dark tweet-hover">
+        <div class="d-flex gap-3">
+          <div class="avatar-md">T</div>
+
+          <div class="flex-grow-1">
+            <div class="d-flex align-items-center gap-2 small text-secondary">
+              <span class="fw-bold text-white">True Geordie</span>
+              <i class="fa-solid fa-circle-check text-primary"></i>
+              <span>@TrueGeordieTG</span>
+              <span>·</span>
+              <span>12h</span>
+              <i class="fa-solid fa-ellipsis ms-auto"></i>
+            </div>
+
+            <div class="mt-2">
+              <div class="fw-bold">PENALTY GATE</div>
+              <p>
+                I shouldn’t even need to post about this given the great win...
+              </p>
+            </div>
+
+            <div class="media-box my-2">Media</div>
+
+            <div class="d-flex justify-content-between text-secondary small">
+              <i class="fa-regular fa-comment"></i>
+              <i class="fa-solid fa-retweet"></i>
+              <i class="fa-regular fa-heart"></i>
+              <i class="fa-solid fa-chart-simple"></i>
+              <i class="fa-regular fa-bookmark"></i>
+              <i class="fa-solid fa-arrow-up-from-bracket"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:1000px"></div>
+
+    </main>
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="col-lg-3 col-xl-3 d-none d-lg-block">
+      <div class="position-sticky top-0 pt-3">
+
+        <div class="search-pill mb-3">
+          <i class="fa-solid fa-magnifying-glass text-secondary"></i>
+          <input placeholder="Search">
+        </div>
+
+        <div class="card-x mb-3">
+          <h5 class="fw-bold">Subscribe to Premium</h5>
+          <p class="text-secondary small">
+            Get rid of ads and unlock features.
+          </p>
+          <button class="btn btn-primary rounded-pill fw-bold">
+            Subscribe
+          </button>
+        </div>
+
+        <div class="card-x">
+          <h5 class="fw-bold">Who to follow</h5>
+        </div>
+
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+</body>
+</html>
